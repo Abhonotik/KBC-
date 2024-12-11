@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thankyou.css">
+</head>
+<body>
+    <div class="thankyou-container">
+        <h1>Thank You!</h1>
+        <p>Your Score: <span id="score"></span></p>
+        <p>Your User ID: <span id="userId"></span></p>
+        <button onclick="window.location.href='login.html'">Back to Login</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const score = localStorage.getItem('score');
+            const userId = localStorage.getItem('userId');
+            document.getElementById('score').textContent = score;
+            document.getElementById('userId').textContent = userId;
+        }
+    </script>
+</body>
+</html>

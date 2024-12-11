@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #08236d, #083e78);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+
+.proceed-btn {
+  background: #1e90ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #1e90ff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.proceed-btn:hover {
+  background: #005fcb;
+}

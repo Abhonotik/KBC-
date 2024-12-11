@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="start.html" method="get" onsubmit="saveUserId()">
+            <div class="form-group">
+                <label for="userID">User ID</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <!-- Leaderboard Button -->
+        <button onclick="window.location.href='leaderboard.html'" class="leaderboard-btn">Leaderboard</button>
+    </div>
+
+    <script>
+        // Function to save the user ID to localStorage
+        function saveUserId() {
+            const username = document.getElementById('username').value;
+            localStorage.setItem('userId', username);
+        }
+    </script>
+</body>
+</html>

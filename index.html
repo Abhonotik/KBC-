@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon KBC Quiz - Kaun Banega Champion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="frame"> 
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <div class="kbc-logo">
+                <img src="kbclogo.jpg" height="350" width="315" alt="Not Found">
+            </div>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer-container">
+            <span class="timer-label">Time Left: </span>
+            <span id="timer">30</span>s
+        </div>
+
+        <!-- Question Section -->
+        <div class="question" id="question">Your Question Here</div>
+
+        <!-- Options Section -->
+        <div class="options" id="options"></div>
+
+        <!-- Submit Button -->
+        <button id="submit-btn">Submit</button>
+    </div>
+        <!--Audio -->
+    <audio id="entry-music" src="entry-music.mp3"></audio>
+    <audio id="question-change-music" src="question-change.mp3"></audio>
+
+    <script src="kbc.js"></script>
+</body>
+</html>
