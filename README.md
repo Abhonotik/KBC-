@@ -1,0 +1,1 @@
+ Kon Banega Champion is an engaging and interactive quiz-based platform designed to test users' knowledge on various topics. Inspired by popular quiz shows, this project offers a fun learning experience with multiple difficulty levels, lifelines, and rewards.
